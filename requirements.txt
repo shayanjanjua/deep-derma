@@ -6,4 +6,4 @@ streamlit-lottie==0.0.5
 opencv-python==4.10.0.82
 numpy==1.26.4
 opencv-python-headless
-
+torch 
