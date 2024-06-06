@@ -12,7 +12,7 @@ if not firebase_admin._apps:
     firebase_admin.initialize_app(cred)
 
 # Load the Lottie animation file from the local file system
-animation_path = r"C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\ANIMATIONS\loading.json"
+animation_path = r"ANIMATIONS/loading.json"
 with open(animation_path, "r") as f:
     animation_data = json.load(f)
 
