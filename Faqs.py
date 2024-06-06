@@ -21,7 +21,7 @@ def set_background(image_path):
 
 def app():
     # Set the background image
-    set_background(r'C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\IMAGES\background image deep dermaa.jpg')  # Use raw string
+    set_background(r'IMAGES deepdermaa.jpg')  # Use raw string
 
     st.markdown("<h1 style='color: White;'>Frequently Asked Questions</h1>", unsafe_allow_html=True)
 
