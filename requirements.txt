@@ -9,3 +9,5 @@ opencv-python-headless
 torch 
 torchvision 
 transforms
+scikit-learn
+matplotlib
