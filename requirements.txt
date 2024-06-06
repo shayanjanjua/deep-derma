@@ -3,5 +3,5 @@ streamlit_option_menu
 Pillow
 firebase_admin
 streamlit-lottie
-OpenCv
+opencv-python
 numpy
