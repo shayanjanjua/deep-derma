@@ -4,3 +4,4 @@ Pillow
 firebase_admin
 streamlit-lottie
 OpenCV
+numpy
