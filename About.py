@@ -59,7 +59,7 @@ def app():
     """, unsafe_allow_html=True)
 
     # Load and display the second image
-    img2 = Image.open(r'C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\IMAGES\FYP IMG 02.png')
+    img2 = Image.open(r'IMAGES/FYP IMG 02.png')
     st.image(img2, use_column_width=True)
 
     st.markdown("<h2 style='color: White;'>Why Choose DEEP DERMA</h2>", unsafe_allow_html=True)
