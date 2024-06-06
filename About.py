@@ -36,7 +36,7 @@ def app():
 
 
     # Load and display the first image
-    img1 = Image.open(r'C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\IMAGES\FYP IMG 01.png')
+    img1 = Image.open(r'IMAGES/FYP IMG 01.png')
     st.image(img1, use_column_width=True)
 
     st.markdown("<h2 style='color: White;'>The Challenge</h2>", unsafe_allow_html=True)
