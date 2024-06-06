@@ -1,0 +1,13 @@
+train: /content/drive/MyDrive/YOLO/train/images
+val: /content/drive/MyDrive/YOLO/val/images
+test: /content/drive/MyDrive/YOLO/test/images
+
+nc: 10
+names: ['Atopic-Dermatitis', 'Basal-Cell-Carcinoma-BCC-', 'Benign-Keratosis-like-Lesions-BKL-', 'Eczema', 'Melanocytic-Nevi-NV-', 'Melanoma', 'Psoriasis-pictures-Lichen-Planus', 'Seborrheic-Keratoses-and-other-Benign-Tumors', 'Tinea Ringworm Candidiasis and other Fungal Infections', 'Warts-Molluscum-and-other-Viral-Infections']
+
+roboflow:
+  workspace: fyp-l8uct
+  project: fyp-segmentation
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/fyp-l8uct/fyp-segmentation/dataset/1

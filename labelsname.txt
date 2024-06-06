@@ -1,0 +1,7 @@
+Actinic Keratoses (AKIEC)
+Basal Cell Carcinoma (BCC) 
+Benign keratosis (BKL) 
+Dermatofibroma (DF)
+Melanoma (MEL)
+Melanocytic Nevi (MN)
+Vascular Malformations (VASC)

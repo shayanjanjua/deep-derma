@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "deep-derma",
+  "private_key_id": "66a2657a04f692848a0cba7a9aae58d64a343c5b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCqm3O1KjVdfAG/\nNFlwX2sUQw7YbBY7pZUBVJg2EdnfEvx2UE5CL1K33Xh9sULEUbxAnGRGY/qOzR/C\nfvuk0IUOSMRSk2EYOhv13s8nPBCWpDQ8EG77KFdc28vCJOW+ljpBRZnvvfm8Lmt9\nGwsiAd6OjRXOFnXYWDPfyGaunv/dNWEN+apq6gwJWaPDUIhIiaVWrbQOxIIjb+w0\nD+WLej8F9OAN2kLugZXCAEUMuXMV0pD9fJWuoCKIwoZGt8O85jvZwGoEhKhElee5\ntxobkgjj/ugN++ZRVPvn1cz14MDyXFywgJb7xO/nkGz2lY7NsFlWeMl0gYf7YpHp\nCb64CnKjAgMBAAECggEAD+ovaYN19fIG8bCu9TIZeYrl3B99FXRVSYn8JvMUWWBa\nh6jnG/pxI3C3+DWsbkbXoklUe1KBQYf2Af05eT7wYow8MB3KbWmiSRXPSjAqtfq8\nWqwHxksVlzZzs/kgK161MXiOKxSUMs87vLBkoff9rFuR4KcsuBFGSYZWucxgPuDA\nS0cPstKmLx2+iUdhYaLoUoCy/4QeRmvqZ1ErcWhD5K4RAvDgygPXEyd8RYyt7NGD\nNWiNpj9LLv2KI1DpmNBn36UTt8YBT+Lp7jBJi/Qe+Gz2h7n4XLuSs11YP+XhKbd7\no2Gq6VBUXQfWONCKpjX0IpdaG42h3INhGJc39hxeJQKBgQDehOK7xQuyDPd642Ry\nSHnSHo5DIk33fG9B2j+oR00vl62Iz1TNoqFoLTie0Zj4dLAJIoeem4n11rDF14sy\nqQ67gD4RUlooIrE6RqWDqBBK4kzzV8gIU4M8afmLPLj3CIjvCr6AzNZ+wrLT2mZO\n7498DPx2aD7A1jwwfb1Gh87KhwKBgQDERv8mAstnKk1HYRvQ8svip1yT8VYpD+Pt\nBrs1GPlFEwkmKr1/ZINxcGjJIcYdZVc1LWWa8B+u2ccq8r3lXIkwKGR0LAL3pZml\nYmS9nV/Tt3RRhMpnBHWLBoQbJYrRyCG4BbjHOsryJPZAadnOVdKLZkZhtTxKeoBH\n1cXBxOUSBQKBgCpml+2/tmLPJbk86z77oHrxZ5pTRxgJlgmuVML0EzkmZeLT3wzw\nGGGJfGiG9+cgFQsokT8f1EIMDtMkJ1oX7L69yRXz40oSkkLQg2l69N/QD2mvKGat\nwywX5X0qrPQlpDIokfRpE9ZDs1+7FhOkgmrY7qKBarPEHuP+kbqG1lixAoGBALeZ\nkeKEirAeKduzQsnZ1E5YL4lUHzyZ2KNHwKaSjdnHTK+fG1OnOi1K8Tnzlda5jTH5\nHSopo/lzTZMnLer2/H1Hy2/AG6Z8CZVizMlyBMmOugfnJ03mJe2+UqTyIUDK7H+v\nGoGCxYRsfs0SNuOD9EbhjMSpO5SPsp9/oFT5US3hAoGATcVZ+n5Y94bhArjJXUzn\nE524UiqaXn8SxyGHqw/dNsnazfsVKE0i6WkMfRMewh3Q511Wqq62FOZ2yf3T3LEw\nTN7uX/e+EhaoyoY/EYEov8eCR0SxfAfB3N6NTJ5MhvXviJHmYvf4nciODcZN6Tym\n7giooNVqu//80xwqJIBbrW8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-rqugi@deep-derma.iam.gserviceaccount.com",
+  "client_id": "110888641930750437185",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-rqugi%40deep-derma.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
