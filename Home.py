@@ -42,7 +42,7 @@ def app():
     st.markdown('<div class="text">An AI-based Smart Skin Pathology Diagnosis!</div>', unsafe_allow_html=True)
 
     # Load the Lottie animation file from local file system
-    animation_path = r"C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\ANIMATIONS\virus.json"  
+    animation_path = r"ANIMATIONS/virus.json"  
     with open(animation_path, "r") as f:
         animation_data = json.load(f)
 
