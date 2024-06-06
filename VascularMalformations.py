@@ -53,7 +53,7 @@ def app():
     """, unsafe_allow_html=True)
 
     # Add the image after the treatment section
-    image_path = r'C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\IMAGES\Vascular Malformations.png' # Replace with your image path
+    image_path = r'IMAGES/Vascular Malformations.png' # Replace with your image path
     image = Image.open(image_path)
     st.image(image, caption='Example of Vascular Malformations')   
 
