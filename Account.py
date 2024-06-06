@@ -5,7 +5,7 @@ from streamlit_lottie import st_lottie
 import json
 
 # Use double backslashes or forward slashes in the file path
-cred = credentials.Certificate('C:/Users/Shayan/Desktop/FYP/DEEP DERMA APP/deep-derma-66a2657a04f6.json')
+cred = credentials.Certificate('deep-derma-66a2657a04f6.json')
 
 # Check if Firebase app is already initialized
 if not firebase_admin._apps:
