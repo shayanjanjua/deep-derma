@@ -24,7 +24,7 @@ def set_background(image_path):
 
 def app():
     # Set the background image
-    set_background(r'C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\IMAGES\background image deep dermaa.jpg')  # Use raw string
+    set_background(r'IMAGES/background image deep dermaa.jpg')  # Use raw string
 
     # Markdown content with a transparent box
     st.markdown("""
