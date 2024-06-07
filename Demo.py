@@ -242,40 +242,5 @@ def app():
             else:
                 st.error("Model or labels not loaded. Please check the model file path and labels file path and try again.")
 
-    # Add a section for information about diseases and a button to navigate to the disease prediction menu
-    st.markdown('<h1 style="color:White;">Learn About Skin Diseases</h1>', unsafe_allow_html=True)
-    st.markdown(
-        '''
-        <p style="color:White;">
-        Skin diseases are conditions that affect your skin. These diseases may cause rashes, inflammation, itchiness, or other skin changes.
-        Some skin diseases may be genetic, while others may be caused by lifestyle factors or environmental conditions.
-        It is important to identify and treat skin diseases early to prevent complications.
-        </p>
-        ''',
-        unsafe_allow_html=True
-    )
-
-    # Add a button to navigate to the disease prediction menu
-    st.markdown("""
-        <style>
-        .stButton button {
-            background-color: #4CAF50; /* Green background */
-            color: white; /* White text */
-            border: none; /* Remove border */
-            padding: 10px 24px; /* Some padding */
-            border-radius: 10px; /* Rounded corners */
-            cursor: pointer; /* Pointer/hand icon */
-            font-size: 16px; /* Increase font size */
-        }
-        .stButton button:hover {
-            background-color: #45a049; /* Darker green on hover */
-        }
-        </style>
-    """, unsafe_allow_html=True)
-
-    if st.button("Go to Disease Prediction Menu"):
-        # Navigate to the disease prediction menu (replace 'disease_prediction_menu' with the actual function or URL)
-        st.write("Navigating to the disease prediction menu...")
-
 if __name__ == "__main__":
     app()
