@@ -14,7 +14,7 @@ MODEL_NAME = 'shay.pt'
 MODEL_PATH = os.path.join(BASE_DIR, MODEL_NAME)
 
 # Define the labels path and name
-LABELS_PATH = r'C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\labelsname.txt'
+LABELS_PATH = r'labelsname.txt'
 
 # Function to load the YOLO model
 def load_yolo_model(model_path):
