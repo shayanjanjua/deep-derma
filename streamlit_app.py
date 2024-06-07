@@ -15,7 +15,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 # Load and encode the sidebar background image
-sidebar_image_path = r'C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\IMAGES\sidebar image.png'
+sidebar_image_path = r'IMAGES/sidebar image.png'
 sidebar_img_base64 = get_base64_of_bin_file(sidebar_image_path)
 
 # Set page config with the loaded image as the icon
