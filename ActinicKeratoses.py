@@ -56,7 +56,7 @@ def app():
     """, unsafe_allow_html=True)
 
     # Add the image after the treatment section
-    image_path = r'IMAGES/ACtinic Keratoses.png' # Replace with your image path
+    image_path = r'IMAGES/ACtinic Keratoses .png' # Replace with your image path
     image = Image.open(image_path)
     st.image(image, caption='Example of Actinic Keratoses Treatment')    
 
