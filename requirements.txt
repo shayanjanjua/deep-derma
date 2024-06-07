@@ -10,4 +10,4 @@ torchvision
 scikit-learn
 matplotlib
 ultralytics
-
+dill
