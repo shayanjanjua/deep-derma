@@ -9,7 +9,7 @@ import base64
 from ultralytics import YOLO
 
 # Define the base directory where your models are stored
-BASE_DIR = r'shayan/shay.pt'
+BASE_DIR = r'shayan'
 MODEL_NAME = 'shay.pt'
 MODEL_PATH = os.path.join(BASE_DIR, MODEL_NAME)
 
