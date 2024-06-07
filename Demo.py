@@ -91,7 +91,7 @@ def set_background(image_path):
 # Main function for the Streamlit app
 def app():
     # Set the background image
-    set_background(r'C:\Users\Shayan\Desktop\FYP\DEEP DERMA APP\IMAGES\background image deep dermaa.jpg')  # Use raw string
+    set_background(r'IMAGES/background image deep dermaa.jpg')  # Use raw string
 
     st.markdown("<h1 style='color: white;'>Try It</h1>", unsafe_allow_html=True)
 
