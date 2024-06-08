@@ -11,4 +11,3 @@ scikit-learn
 matplotlib
 ultralytics
 dill
-opencv-python-headless
