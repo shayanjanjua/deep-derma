@@ -3,8 +3,10 @@ from PIL import Image
 import numpy as np
 import cv2
 import os
-from ultralytics import YOLO
+import torch
+from torchvision import transforms
 import base64
+from ultralytics import YOLO
 
 # Define the base directory where your models are stored
 BASE_DIR = r'shayan'
@@ -33,6 +35,14 @@ def load_labels(labels_path):
     except Exception as e:
         st.error(f"An error occurred while loading the labels: {str(e)}")
         return None
+
+# Function to preprocess the image
+def preprocess_image(image):
+    transform = transforms.Compose([
+        transforms.Resize((640, 640)),
+        transforms.ToTensor(),
+    ])
+    return transform(image).unsqueeze(0)
 
 # Function to perform object detection using the YOLO model
 def detect_objects_yolo(image, model):
@@ -93,21 +103,24 @@ def app():
 
     if labels is not None:
         st.markdown("""          
-        <div style="background-color: white; border: 4px solid green; border-radius: 10px; padding: 10px;">
-        (Labels loaded successfully!)
-        </div>
-        """, unsafe_allow_html=True)
+    <div style="background-color: white; border: 4px solid green; border-radius: 10px; padding: 10px;">
+    (Labels loaded successfully!)
+    </div>
+    """, unsafe_allow_html=True)
         
     if model is not None:
         st.markdown("""          
-        <div style="background-color: white; border: 4px solid green; border-radius: 10px; padding: 10px;">
-        (Model loaded successfully!)
-        </div>
-        """, unsafe_allow_html=True)
-
+    <div style="background-color: white; border: 4px solid green; border-radius: 10px; padding: 10px;">
+    (Model loaded successfully!)
+    </div>
+    """, unsafe_allow_html=True)
+        
     st.markdown("<h1 style='color: white;'>Fill This Form Out</h1>", unsafe_allow_html=True)
     
     with st.form("questionnaire_form"):
+        # Wrap the form in a div with specified styling
+
+        # QUESTIONS 
         st.markdown(
             '''
                 <h3 style="color:White; margin-bottom: 10px;">1. Do you have any known allergies? (Select all that apply)</h3>
@@ -228,24 +241,6 @@ def app():
                     st.error("Object detection could not be performed due to an error.")
             else:
                 st.error("Model or labels not loaded. Please check the model file path and labels file path and try again.")
-
-    # Add a section for information about diseases and a button to navigate to the disease prediction menu
-    st.markdown('<h1 style="color:White;">Learn About Skin Diseases</h1>', unsafe_allow_html=True)
-    st.markdown(
-        '''
-        <p style="color:White;">
-        Skin diseases are conditions that affect your skin. These diseases may cause rashes, inflammation, itchiness, or other skin changes.
-        Some skin diseases may be genetic, while others may be caused by lifestyle factors or environmental conditions.
-        It is important to identify and treat skin diseases early to prevent complications.
-        </p>
-        ''',
-        unsafe_allow_html=True
-    )
-
-    # Add a button to navigate to the disease prediction menu
-    if st.button("Go to Disease Prediction Menu"):
-        # Navigate to the disease prediction menu (replace 'disease_prediction_menu' with the actual function or URL)
-        st.write("Navigating to the disease prediction menu...")
 
 if __name__ == "__main__":
     app()
