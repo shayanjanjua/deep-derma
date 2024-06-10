@@ -56,8 +56,8 @@ class MultiApp:
             # Option menu in sidebar
             app = option_menu(
                 menu_title='Deep Derma',
-                options=['HOME', 'ABOUT', 'TRY IT', 'DISEASE PREDICTIONS', 'ACCOUNT', 'CONTACT', 'FAQ'],
-                icons=['house-fill', 'book-fill', 'bi bi-play', 'bi-activity', 'bi bi-person-circle', 'bi-phone-fill', 'bi-question-circle-fill'],
+                options=['HOME', 'ABOUT', 'TRY IT', 'ACCOUNT', 'CONTACT', 'FAQ'],
+                icons=['house-fill', 'book-fill', 'bi bi-play', 'bi bi-person-circle', 'bi-phone-fill', 'bi-question-circle-fill'],
                 menu_icon='none',
                 default_index=0,
                 styles={
@@ -84,48 +84,6 @@ multi_app.add_app("TRY IT", Demo.app)
 multi_app.add_app("ACCOUNT", Account.app)
 multi_app.add_app("CONTACT", Contact.app)
 multi_app.add_app("FAQ", Faqs.app)
-
-# Add apps for disease predictions
-def show_disease_predictions():
-    disease_app = MultiApp()
-    disease_app.add_app("ActinicKeratoses", ActinicKeratoses.app)
-    disease_app.add_app("BasalCellCarcinoma", BasalCellCarcinoma.app)
-    disease_app.add_app("BenignKeratoses", BenignKeratoses.app)
-    disease_app.add_app("Dermatofibroma", Dermatofibroma.app)
-    disease_app.add_app("Melanoma", Melanoma.app)
-    disease_app.add_app("MelanocyticNevi", MelanocyticNevi.app)
-    disease_app.add_app("VascularMalformations", VascularMalformations.app)
-    
-    st.markdown("<h1 style='color: Black;'>Select Disease that is Predicted By Deep Derma</h1>", unsafe_allow_html=True)
-    
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        if st.button("Actinic Keratoses"):
-            st.session_state.selected_app = "ActinicKeratoses"
-        if st.button("Basal Cell Carcinoma"):
-            st.session_state.selected_app = "BasalCellCarcinoma"
-        if st.button("Benign Keratoses"):
-            st.session_state.selected_app = "BenignKeratoses"
-    
-    with col2:
-        if st.button("Dermatofibroma"):
-            st.session_state.selected_app = "Dermatofibroma"
-        if st.button("Melanoma"):
-            st.session_state.selected_app = "Melanoma"
-        if st.button("Melanocytic Nevi"):
-            st.session_state.selected_app = "MelanocyticNevi"
-    
-    with col3:
-        if st.button("Vascular Malformations"):
-            st.session_state.selected_app = "VascularMalformations"
-    
-    if 'selected_app' in st.session_state:
-        for app_data in disease_app.apps:
-            if app_data["title"] == st.session_state.selected_app:
-                app_data["function"]()
-
-multi_app.add_app("DISEASE PREDICTIONS", show_disease_predictions)
 
 # Run the MultiApp
 multi_app.run()
