@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 import base64
-import Home, About, Faqs, Contact, Account, Demo,
+import Home, About, Faqs, Contact, Account, Demo
 import ActinicKeratoses, BasalCellCarcinoma, BenignKeratoses, Dermatofibroma, Melanoma, MelanocyticNevi, VascularMalformations
 
 # Load the main image
