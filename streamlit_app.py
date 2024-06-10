@@ -7,7 +7,7 @@ import ActinicKeratoses, BasalCellCarcinoma, BenignKeratoses, Dermatofibroma, Me
 
 # Load the main image
 # Pillow code
-image = Image.open('image.jpgr'IMAGES/DEEP DERMA LOGO.png'')
+image = Image.open('image.jpgr'IMAGES/DEEP DERMA LOGO.png')
 
 # Function to load and encode an image to base64
 def get_base64_of_bin_file(bin_file):
