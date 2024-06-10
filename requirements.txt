@@ -6,6 +6,7 @@ streamlit-lottie
 opencv-python
 numpy
 torch
+pyopengl
 torchvision
 scikit-learn
 matplotlib
