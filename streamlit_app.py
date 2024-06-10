@@ -2,8 +2,20 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 import base64
-import Home, About, Faqs, Contact, Account, Demo
-import ActinicKeratoses, BasalCellCarcinoma, BenignKeratoses, Dermatofibroma, Melanoma, MelanocyticNevi, VascularMalformations
+# Import your modules here
+import Home
+import About
+import Faqs
+import Contact
+import Account
+import Demo
+import ActinicKeratoses
+import BasalCellCarcinoma
+import BenignKeratoses
+import Dermatofibroma
+import Melanoma
+import MelanocyticNevi
+import VascularMalformations
 
 # Load the main image
 img = Image.open(r'IMAGES/DEEP DERMA LOGO.png')
