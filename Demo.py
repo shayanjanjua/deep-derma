@@ -214,7 +214,7 @@ def app():
         # Check if the "Predict" button is clicked
         if st.button("Predict"):
             # Perform object detection if model loaded successfully
-            if model is not None and labels are not None:
+            if model is not None and labels is not None:
                 results = detect_objects_yolo(image, model)
                 if results is not None:
                     # Convert image to array format for drawing bounding boxes
