@@ -94,14 +94,14 @@ def app():
     if labels is not None:
         st.markdown("""          
         <div style="background-color: white; border: 4px solid green; border-radius: 10px; padding: 10px;">
-        (Labels loaded successfully!)
+        Labels loaded successfully!
         </div>
         """, unsafe_allow_html=True)
         
     if model is not None:
         st.markdown("""          
         <div style="background-color: white; border: 4px solid green; border-radius: 10px; padding: 10px;">
-        (Model loaded successfully!)
+        Model loaded successfully!
         </div>
         """, unsafe_allow_html=True)
 
@@ -142,7 +142,6 @@ def app():
         )
 
         symptoms_options = ["None", "Itching", "Redness", "Swelling", "Pain", "Dryness/Scaling", "Blisters/Pustules", "Other"]
-       
         symptoms = st.multiselect("", symptoms_options)
 
         if "Other" in symptoms:
@@ -228,24 +227,6 @@ def app():
                     st.error("Object detection could not be performed due to an error.")
             else:
                 st.error("Model or labels not loaded. Please check the model file path and labels file path and try again.")
-
-    # Add a section for information about diseases and a button to navigate to the disease prediction menu
-    st.markdown('<h1 style="color:White;">Learn About Skin Diseases</h1>', unsafe_allow_html=True)
-    st.markdown(
-        '''
-        <p style="color:White;">
-        Skin diseases are conditions that affect your skin. These diseases may cause rashes, inflammation, itchiness, or other skin changes.
-        Some skin diseases may be genetic, while others may be caused by lifestyle factors or environmental conditions.
-        It is important to identify and treat skin diseases early to prevent complications.
-        </p>
-        ''',
-        unsafe_allow_html=True
-    )
-
-    # Add a button to navigate to the disease prediction menu
-    if st.button("Go to Disease Prediction Menu"):
-        # Navigate to the disease prediction menu (replace 'disease_prediction_menu' with the actual function or URL)
-        st.write("Navigating to the disease prediction menu...")
 
 if __name__ == "__main__":
     app()
