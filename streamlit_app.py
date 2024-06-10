@@ -2,24 +2,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 import base64
-
-# Ensure these imports match the actual file names and locations
-try:
-    import Home
-    import About
-    import Faqs
-    import Contact
-    import Account
-    import Demo
-    import ActinicKeratoses
-    import BasalCellCarcinoma
-    import BenignKeratoses
-    import Dermatofibroma
-    import Melanoma
-    import MelanocyticNevi
-    import VascularMalformations
-except ImportError as e:
-    st.error(f"Error importing modules: {e}")
+import Home, About, Faqs, Contact, Account, Demo
+import ActinicKeratoses, BasalCellCarcinoma, BenignKeratoses, Dermatofibroma, Melanoma, MelanocyticNevi, VascularMalformations
 
 # Load the main image
 img = Image.open(r'IMAGES/DEEP DERMA LOGO.png')
@@ -141,5 +125,5 @@ def show_disease_predictions():
 multi_app.add_app("DISEASE PREDICTIONS", show_disease_predictions)
 
 # Run the MultiApp
-if __name__ == "__main__":
-    multi_app.run()
+multi_app.run()
+
