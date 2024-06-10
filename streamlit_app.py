@@ -2,13 +2,22 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 import base64
-
-# Import local modules
-import Home, About, Faqs, Contact, Account, Demo
-import ActinicKeratoses, BasalCellCarcinoma, BenignKeratoses, Dermatofibroma, Melanoma, MelanocyticNevi, VascularMalformations
+import Home
+import About
+import Faqs
+import Contact
+import Account
+import Demo
+import ActinicKeratoses
+import BasalCellCarcinoma
+import BenignKeratoses
+import Dermatofibroma
+import Melanoma
+import MelanocyticNevi
+import VascularMalformations
 
 # Load the main image
-img = Image.open('IMAGES/DEEP DERMA LOGO.png')
+img = Image.open(r'IMAGES/DEEP DERMA LOGO.png')
 
 # Function to load and encode an image to base64
 def get_base64_of_bin_file(bin_file):
@@ -17,7 +26,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 # Load and encode the sidebar background image
-sidebar_image_path = 'IMAGES/sidebar image.png'
+sidebar_image_path = r'IMAGES/sidebar image.png'
 sidebar_img_base64 = get_base64_of_bin_file(sidebar_image_path)
 
 # Set page config with the loaded image as the icon
@@ -52,6 +61,7 @@ class MultiApp:
     def run(self):
         # Add sidebar menu
         with st.sidebar:
+            # Option menu in sidebar
             app = option_menu(
                 menu_title='Deep Derma',
                 options=['HOME', 'ABOUT', 'TRY IT', 'DISEASE PREDICTIONS', 'ACCOUNT', 'CONTACT', 'FAQ'],
@@ -61,7 +71,8 @@ class MultiApp:
                 styles={
                     "container": {"padding": "5!important", "background-color": '#4592DF'},
                     "icon": {"color": "White", "font-size": "23px"},
-                    "nav-link": {"color": "white", "font-size": "20px", "text-align": "left", "margin": "0px", "--hover-color": "#CCE2EB"},
+                    "nav-link": {"color": "white", "font-size": "20px", "text-align": "left", "margin": "0px",
+                                 "--hover-color": "#CCE2EB"},
                     "nav-link-selected": {"background-color": "#020202"},
                 }
             )
