@@ -11,4 +11,4 @@ scikit-learn
 matplotlib
 ultralytics
 dill
-sudo apt-get install libgl1-mesa-glx
+sudo libgl1-mesa-glx
