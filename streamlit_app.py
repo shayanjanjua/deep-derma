@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 import base64
 
-# Ensure these imports match the actual file names and locations
+# Verify that these modules exist in your directory or subdirectory
 try:
     import Home
     import About
@@ -20,6 +20,7 @@ try:
     import VascularMalformations
 except ImportError as e:
     st.error(f"Error importing modules: {e}")
+    raise
 
 # Load the main image
 img = Image.open(r'IMAGES/DEEP DERMA LOGO.png')
