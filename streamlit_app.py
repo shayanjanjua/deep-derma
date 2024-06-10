@@ -6,7 +6,6 @@ import Home, About, Faqs, Contact, Account, Demo
 import ActinicKeratoses, BasalCellCarcinoma, BenignKeratoses, Dermatofibroma, Melanoma, MelanocyticNevi, VascularMalformations
 
 # Load the main image
-# Pillow code
 image = Image.open(r'IMAGES/DEEP DERMA LOGO.png')
 
 # Function to load and encode an image to base64
@@ -22,21 +21,24 @@ sidebar_img_base64 = get_base64_of_bin_file(sidebar_image_path)
 # Set page config with the loaded image as the icon
 st.set_page_config(
     page_title="DEEP DERMA",
-    page_icon=img,
+    page_icon=image,
 )
 
 # Add custom CSS for sidebar background
-st.markdown(
-    f"""
-    <style>
-    [data-testid="stSidebar"] {{
-        background-image: url('data:image/jpg;base64,{sidebar_img_base64}');
-        background-size: cover;
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+try:
+    st.markdown(
+        f"""
+        <style>
+        [data-testid="stSidebar"] {{
+            background-image: url('data:image/jpg;base64,{sidebar_img_base64}');
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+except Exception as e:
+    st.error(f"An error occurred: {e}")
 
 class MultiApp:
     def __init__(self):
