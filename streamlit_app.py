@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 import base64
 
-# Verify that these modules exist in your directory or subdirectory
+# Ensure these modules exist in your directory
 try:
     import Home
     import About
